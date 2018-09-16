@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="?actionBarSize">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:id="@+id/package_table_dialog_label_list_view_feature"
+        android:layout_weight="2"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/tick_icon"
+        android:padding="18dp"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/package_table_dialog_label_list_view_trial"
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:src="@drawable/wrong_icon"
+        android:contentDescription="@string/app_name"
+        android:padding="18dp"
+        android:id="@+id/package_table_dialog_label_list_view_premium"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

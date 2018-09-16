@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#80000000"
+    android:id="@+id/export_setting_dialog"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/default_background"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:fontFamily="@string/font_family_condensed"
+            android:id="@+id/export_setting_dialog_title"
+            android:text="@string/export_setting_dialog"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#f1f1f1"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/transparent_black"
+            android:fontFamily="@string/font_family_condensed"
+            android:id="@+id/menu_setting_button"
+            android:text="@string/export_setting_dialog_label_export_instruction"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/export_setting_dialog_category_layout"
+            android:background="@drawable/ripple_effect"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="@string/export_setting_dialog_label_category"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="18sp"
+                android:textColor="@color/tifanny_blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/export_setting_dialog_category_count"
+                android:fontFamily="@string/font_family_condensed" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/export_setting_dialog_category_checkbox"
+                android:theme="@style/CustomCheckBox"
+                android:enabled="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/export_setting_dialog_barcode_layout"
+            android:background="@drawable/ripple_effect"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="@string/export_setting_dialog_label_barcode"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="18sp"
+                android:textColor="@color/tifanny_blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/export_setting_dialog_barcode_count"
+                android:fontFamily="@string/font_family_condensed" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/export_setting_dialog_barcode_checkbox"
+                android:theme="@style/CustomCheckBox"
+                android:enabled="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/export_setting_dialog_quantity_layout"
+            android:background="@drawable/ripple_effect"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="@string/export_setting_dialog_label_quantity"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="18sp"
+                android:textColor="@color/tifanny_blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/export_setting_dialog_quantity_count"
+                android:fontFamily="@string/font_family_condensed" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/export_setting_dialog_quantity_checkbox"
+                android:theme="@style/CustomCheckBox"
+                android:enabled="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/export_setting_dialog_date_layout"
+            android:background="@drawable/ripple_effect"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="@string/export_setting_dialog_label_date"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="18sp"
+                android:textColor="@color/tifanny_blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/export_setting_dialog_date_count"
+                android:fontFamily="@string/font_family_condensed" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/export_setting_dialog_date_checkbox"
+                android:theme="@style/CustomCheckBox"
+                android:enabled="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:id="@+id/export_setting_dialog_time_layout"
+            android:background="@drawable/ripple_effect"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="@string/export_setting_dialog_label_time"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="18sp"
+                android:textColor="@color/tifanny_blue"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/export_setting_dialog_time_count"
+                android:fontFamily="@string/font_family_condensed" />
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/export_setting_dialog_time_checkbox"
+                android:theme="@style/CustomCheckBox"
+                android:enabled="false"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#f1f1f1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="?actionBarSize">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:id="@+id/export_setting_dialog_cancel_button"
+                android:textColor="@color/transparent_black"
+                android:textStyle="bold"
+                android:background="@drawable/ripple_effect"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="@string/export_setting_dialog_button_cancel"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#f1f1f1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/ripple_effect"
+                android:textColor="@color/tifanny_blue"
+                android:textStyle="bold"
+                android:id="@+id/export_setting_dialog_export_button"
+                android:fontFamily="@string/font_family_condensed"
+                android:text="@string/export_setting_dialog_button_confirm"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

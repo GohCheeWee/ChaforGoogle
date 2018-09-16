@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/actionbar"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/actionBar"
+        android:layout_width="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/package_table_dialog_label_list_view"
+        android:layout_below="@id/actionBar"
+        android:visibility="gone"
+        android:background="@color/default_background"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/package_table_dialog_label_feature"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@string/font_family_condensed"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@string/font_family_condensed"
+            android:textSize="18sp"
+            android:text="@string/package_table_dialog_label_trial"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:fontFamily="@string/font_family_condensed"
+            android:textSize="18sp"
+            android:text="@string/package_table_dialog_label_premium"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/package_table_dialog_divider"
+        android:layout_below="@+id/package_table_dialog_label_list_view"
+        android:background="@color/transparent_black"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/package_table_dialog_list_view"
+        android:visibility="gone"
+        android:layout_below="@+id/package_table_dialog_divider"
+        android:layout_above="@id/package_table_dialog_price_layout"
+        android:layout_height="wrap_content"/>
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/package_table_dialog_progress_bar"
+        android:indeterminateBehavior="repeat"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp"
+        android:id="@+id/package_table_dialog_price_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="@color/default_background"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/package_table_dialog_label_price_layout"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/package_table_dialog_label_price"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="@string/font_family_condensed"
+                android:textSize="16sp"
+                android:layout_weight="2"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/package_table_dialog_trial_price"
+                android:textColor="@color/grey"
+                android:fontFamily="@string/font_family_condensed"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/package_table_dialog_premium_price"
+                android:textColor="@color/grey"
+                android:fontFamily="@string/font_family_condensed"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="2"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="@string/package_table_dialog_buy_button"
+                android:gravity="center"
+                android:background="@drawable/custom_button_with_color_black_and_ripple_effect"
+                android:padding="5dp"
+                android:id="@+id/package_table_dialog_buy_button"
+                android:textColor="@color/white"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

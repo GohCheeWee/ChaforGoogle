@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="#80000000"
+    android:id="@+id/activity_export_category_menu_dialog_parent_layout"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#f1f1f1"
+            android:id="@+id/export_file_type_dialog_label_csv_button"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@string/font_family_condensed"
+                android:id="@+id/activity_export_category_menu_dialog_label_export_csv_file"
+                android:text="@string/activity_export_category_menu_dialog_label_export_file"/>
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:id="@+id/export_file_type_dialog_label_csv_checkbox"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/transparent_white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="#f1f1f1"
+            android:id="@+id/export_file_type_dialog_label_text_button"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:padding="15dp"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:fontFamily="@string/font_family_condensed"
+                android:id="@+id/export_file_type_dialog_label_text"
+                android:text="@string/activity_export_category_menu_dialog_label_export_text_file"/>
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:id="@+id/export_file_type_dialog_label_text_checkbox"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/transparent_black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="?actionBarSize">
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#f1f1f1"
+                android:textColor="#80000000"
+                android:id="@+id/export_file_type_dialog_cancel_button"
+                android:text="@string/fragment_category_insert_dialog_cancel"
+                android:layout_weight="1"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fragment_category_insert_dialog_divider"
+                android:background="#80000000"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#f1f1f1"
+                android:id="@+id/export_file_type_dialog_confirm_button"
+                android:text="@string/fragment_forgot_password_label_confirm"
+                android:textColor="@color/tifanny_blue"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

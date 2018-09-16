@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".exportFeature.subcategory.scanner.CaptureActivity">
+
+    <com.jby.chaforgoogle.others.SquareHeightLinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/activity_capture_action_bar_back_button"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:src="@drawable/actionbar_back_icon"/>
+
+    </com.jby.chaforgoogle.others.SquareHeightLinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:maxWidth="100dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/activity_capture_action_bar"
+        android:textColor="#ffffff"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/activity_capture_action_bar_back_button"
+        android:id="@+id/activity_capture_action_bar_title"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent" />
+
+    <com.jby.chaforgoogle.others.SquareHeightLinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/activity_capture_action_bar_flash_light"
+        android:layout_alignParentEnd="true"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:contentDescription="@string/app_name"
+            android:id="@+id/activity_capture_action_bar_flash_light_icon"
+            android:src="@drawable/close_flash_icon"/>
+
+    </com.jby.chaforgoogle.others.SquareHeightLinearLayout>
+
+</RelativeLayout>
